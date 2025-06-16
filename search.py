@@ -11,7 +11,7 @@ from sentence_transformers import SentenceTransformer, util
 
 #Load dataset
 def load_tutorials(path=r"C:\Users\bongi\Desktop\projects\HairspirationFinder\tutorials_dataset.json"):
-    with open(path, 'r') as file:
+    with open(path, 'r', encoding='utf-8') as file:
         data = json.load(file)
         
     #Combine title and description to create richer, more descriptive text embeddings for semantic search
